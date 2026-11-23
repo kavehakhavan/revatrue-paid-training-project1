@@ -1,4 +1,3 @@
-
 package com.revature.project1.repository.entity;
 
 import jakarta.persistence.*;
