@@ -2,6 +2,8 @@ package com.revature.project1.repository.entity;
 
 import jakarta.persistence.*;
 
+import java.time.OffsetDateTime;
+
 @Entity
 @Table(name = "applications")
 public class Application {
@@ -21,7 +23,7 @@ public class Application {
     private Long employeeId;
 
     @Column(name = "time_stamp", nullable = false, length = 100)
-    private String timeStamp;
+    private String  timeStamp;
 
     // Constructors
     public Application(){}
@@ -65,7 +67,7 @@ public class Application {
         this.employeeId = employeeId;
     }
 
-    public String getTimeStamp() {
+    public String  getTimeStamp() {
         return timeStamp;
     }
 

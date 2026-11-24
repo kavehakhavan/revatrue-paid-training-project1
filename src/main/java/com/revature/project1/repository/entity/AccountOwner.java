@@ -7,8 +7,8 @@ import jakarta.persistence.*;
 public class AccountOwner {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "recordId")
-    private Long recordId;
+    @Column(name = "ownerRecordId")
+    private Long ownerRecordId;
 
     @Column(name = "account_number", nullable = false)
     private Long accountNumber;
@@ -26,12 +26,12 @@ public class AccountOwner {
     }
 
     // Getters and Setters
-    public Long getRecordId() {
-        return recordId;
+    public Long getOwnerRecordId() {
+        return ownerRecordId;
     }
 
-    public void setRecordId(Long recordId) {
-        this.recordId = recordId;
+    public void setOwnerRecordId(Long recordId) {
+        this.ownerRecordId = recordId;
     }
 
     public Long getAccountNumber() {
